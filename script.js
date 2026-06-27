@@ -1,6 +1,6 @@
 const menuButton = document.querySelector(".hamburger");
 const fullscreenMenu = document.getElementById("fullscreenMenu");
-const loadingOverlay = document.getElementById("loadingOverlay");
+
 
 if (menuButton && fullscreenMenu) {
   menuButton.addEventListener("click", () => {
@@ -53,7 +53,7 @@ const cropButton = document.getElementById("cropButton");
 const croppedConfirm = document.getElementById("croppedConfirm");
 const croppedPreview = document.getElementById("croppedPreview");
 const entryForm = document.querySelector(".entry-form");
-
+const loadingOverlay = document.getElementById("loadingOverlay");
 let cropper = null;
 let croppedBlob = null;
 
