@@ -141,7 +141,7 @@ if (entryForm) {
       formData.delete("photo");
       formData.append("photo", croppedBlob, "lucklick-photo-contest.jpg");
 
-      const response = await fetch("http://localhost:3000/api/entry", {
+      const response = await fetch("https://lucklick-4th.onrender.com", {
         method: "POST",
         body: formData,
       });
