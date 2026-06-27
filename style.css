@@ -810,18 +810,18 @@ body {
   color: #d97777;
 }
 
+.loading-overlay[hidden] {
+  display: none !important;
+}
+
 .loading-overlay {
   position: fixed;
   inset: 0;
   z-index: 999;
-  display: none;
+  display: grid;
   place-items: center;
   background: rgba(255, 250, 245, 0.82);
   backdrop-filter: blur(8px);
-}
-
-.loading-overlay.is-active {
-  display: grid;
 }
 
 .loading-card {

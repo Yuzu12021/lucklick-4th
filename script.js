@@ -137,8 +137,7 @@ if (entryForm) {
     submitButton.textContent = "送信中...";
 
 if (loadingOverlay) {
-  loadingOverlay.classList.add("is-active");
-}
+  loadingOverlay.hidden = false;}
     try {
       const formData = new FormData(entryForm);
 
@@ -188,7 +187,7 @@ if (thanksCard) {
       alert("送信に失敗しました。時間をおいて再度お試しください。");
     } finally {
       if (loadingOverlay) {
-  loadingOverlay.classList.remove("is-active");
+  loadingOverlay.hidden = true;
 }
       submitButton.disabled = false;
       submitButton.textContent = "応募する";
