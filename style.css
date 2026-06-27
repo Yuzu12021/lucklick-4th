@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -652,6 +653,9 @@ body {
   background: #fff;
   font: inherit;
   color: #4a3428;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .entry-form input:focus,
@@ -804,4 +808,54 @@ body {
 .thanks-note {
   font-weight: 900;
   color: #d97777;
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: none;
+  place-items: center;
+  background: rgba(255, 250, 245, 0.82);
+  backdrop-filter: blur(8px);
+}
+
+.loading-overlay.is-active {
+  display: grid;
+}
+
+.loading-card {
+  width: calc(100% - 48px);
+  max-width: 320px;
+  padding: 28px 24px;
+  border-radius: 28px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(120, 80, 60, 0.18);
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 18px;
+  border: 5px solid #f6d6ca;
+  border-top-color: #f39a9a;
+  border-radius: 50%;
+  animation: loadingSpin 0.9s linear infinite;
+}
+
+.loading-card p {
+  margin: 0 0 6px;
+  font-weight: 900;
+}
+
+.loading-card small {
+  color: #9b7a68;
+  font-weight: 700;
+}
+
+@keyframes loadingSpin {
+  to {
+    transform: rotate(360deg);
+  }
 }
