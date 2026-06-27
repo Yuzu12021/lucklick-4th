@@ -254,30 +254,132 @@ body {
 
 .day-list {
   display: grid;
-  gap: 18px;
+  gap: 22px;
 }
 
 .day-card {
-  padding: 22px;
-  border-radius: 24px;
+  position: relative;
+  padding: 24px 20px 22px;
+  border-radius: 28px;
   background: #fff;
-  box-shadow: 0 10px 28px rgba(120, 80, 60, 0.08);
+  box-shadow: 0 10px 28px rgba(120, 80, 60, 0.1);
+  overflow: hidden;
+  border: 2px solid var(--day-color);
 }
 
-.day-date {
-  margin: 0 0 8px;
-  color: #f39a9a;
+.day-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--day-color) 18%, white),
+    #fff 58%
+  );
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.day-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.day-card-1 {
+  --day-color: #4169e1;
+}
+
+.day-card-2 {
+  --day-color: #7bd65f;
+}
+
+.day-card-3 {
+  --day-color: #c56dff;
+}
+
+.day-ribbon {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 58px;
+  height: 82px;
+  padding-top: 10px;
+  background: var(--day-color);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.day-ribbon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  border-left: 29px solid var(--day-color);
+  border-right: 29px solid var(--day-color);
+  border-bottom: 18px solid transparent;
+}
+
+.day-ribbon span {
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.day-ribbon strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 30px;
+  line-height: 1;
   font-weight: 900;
 }
 
+.day-date {
+  margin: 0 0 6px;
+  padding-left: 74px;
+  color: var(--day-color);
+  font-size: 28px !important;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
 .day-card h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
+  margin: 0 0 16px;
+  padding-left: 74px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
-.day-card p {
+.day-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 18px 0 16px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f6e5da;
+}
+
+.day-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.day-card p:not(.day-date) {
   margin: 0 0 18px;
+  font-weight: 700;
+}
+
+.day-card .more-button {
+  background: #fff;
+  color: var(--day-color);
+  box-shadow: 0 6px 0 color-mix(in srgb, var(--day-color) 35%, #d8c8bd);
+  border: 2px solid color-mix(in srgb, var(--day-color) 35%, white);
+}
+
+.day-card .more-button.disabled {
+  opacity: 0.9;
 }
 
 .more-button,
@@ -296,12 +398,328 @@ body {
   box-shadow: 0 7px 0 #d97777;
 }
 
-.more-button.disabled {
-  background: #d8c8bd;
-  box-shadow: 0 7px 0 #b7a69b;
-  cursor: not-allowed;
+.summer-section {
+  background:
+    radial-gradient(circle at top left, #fff0b8 0 22%, transparent 23%),
+    radial-gradient(circle at bottom right, #dff3ff 0 24%, transparent 25%),
+    #fffaf5;
+  text-align: center;
 }
 
+.summer-logo {
+  margin: 0 auto 18px;
+  max-width: 260px;
+}
+
+.summer-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.summer-lead {
+  margin: 0 auto 24px;
+  font-weight: 800;
+}
+
+.summer-feature {
+  margin: 26px 0 18px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 10px 28px rgba(120, 80, 60, 0.1);
+}
+
+.summer-feature img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.summer-feature div {
+  padding: 20px;
+}
+
+.summer-feature span,
+.summer-card span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #f39a9a;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.summer-feature h3,
+.summer-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.summer-feature p,
+.summer-card p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.summer-grid {
+  display: grid;
+  gap: 14px;
+  text-align: left;
+}
+
+.summer-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(120, 80, 60, 0.08);
+}
+
+.summer-card img {
+  width: 112px;
+  height: 112px;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
+
+.summer-card div {
+  align-self: center;
+}
+
+.summer-card h3 {
+  font-size: 16px;
+}
+
+.summer-card p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.summer-card-wide {
+  grid-template-columns: 1fr;
+}
+
+.summer-card-wide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.summer-category-list{
+
+    display:grid;
+
+    gap:22px;
+
+}
+
+
+.summer-category-card{
+
+    display:block;
+
+    padding:18px;
+
+    border-radius:28px;
+
+    background:white;
+
+    text-decoration:none;
+
+    color:#4A3428;
+
+    box-shadow:0 10px 28px rgba(120,80,60,.1);
+
+}
+
+
+.summer-category-image{
+
+    aspect-ratio:16/9;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    margin-bottom:16px;
+
+}
+
+
+.summer-category-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+.summer-category-card span{
+
+    display:inline-block;
+
+    margin-bottom:8px;
+
+    color:#F39A9A;
+
+    font-size:12px;
+
+    font-weight:900;
+
+}
+
+
+.summer-category-card h3{
+
+    margin:0 0 8px;
+
+    font-size:22px;
+
+}
+
+
+.summer-category-card p{
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+.summer-category-card::after{
+
+    content:"More →";
+
+    display:block;
+
+    margin-top:18px;
+
+    color:#D97777;
+
+    font-size:13px;
+
+    font-weight:900;
+
+}
+.pickup-title{
+
+    margin:48px 0 20px;
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:900;
+
+    color:#4A3428;
+
+}
+
+
+.pickup-list{
+
+    display:grid;
+
+    gap:22px;
+
+}
+
+
+.pickup-card{
+
+    display:block;
+
+    padding:18px;
+
+    border-radius:28px;
+
+    background:white;
+
+    box-shadow:0 10px 28px rgba(120,80,60,.08);
+
+}
+
+
+.pickup-card-image{
+
+    aspect-ratio:16/9;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    margin-bottom:16px;
+
+}
+
+
+.pickup-card-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+.pickup-card span{
+
+    display:inline-block;
+
+    margin-bottom:8px;
+
+    color:#F39A9A;
+
+    font-size:12px;
+
+    font-weight:900;
+
+}
+
+
+.pickup-card h3{
+
+    margin:0 0 10px;
+
+    font-size:22px;
+
+}
+
+
+.pickup-card p{
+
+    margin:0;
+
+    line-height:1.8;
+
+    font-size:14px;
+
+}
+.summer_l{
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.summer_r{
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 .common {
   background: #fff2e8;
 }
