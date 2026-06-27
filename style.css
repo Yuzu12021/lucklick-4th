@@ -671,18 +671,28 @@ body {
 }
 
 .checkbox-label {
-  grid-template-columns: 22px 1fr;
+  display: flex !important;
   align-items: flex-start;
-  gap: 10px !important;
+  gap: 12px !important;
+  cursor: pointer;
   font-size: 13px !important;
   line-height: 1.7;
   font-weight: 700 !important;
 }
 
-.checkbox-label input {
+.checkbox-label input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  margin-top: 3px;
+  margin: 3px 0 0;
+  padding: 0;
+  flex: 0 0 18px;
+  appearance: auto;
+  -webkit-appearance: checkbox;
+}
+
+.checkbox-label span {
+  display: block;
+  flex: 1;
 }
 
 .entry-form .primary-button {
