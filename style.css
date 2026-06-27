@@ -869,3 +869,25 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.entry-form label.checkbox-label {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 12px !important;
+    cursor: pointer;
+}
+
+.entry-form label.checkbox-label input {
+    flex: 0 0 18px;
+
+    width: 18px;
+    height: 18px;
+
+    margin-top: 2px;
+
+    padding: 0;
+}
+
+.entry-form label.checkbox-label span {
+    flex: 1;
+}
