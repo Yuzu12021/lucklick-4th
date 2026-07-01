@@ -1309,3 +1309,252 @@ body {
 .entry-form label.checkbox-label span {
     flex: 1;
 }
+
+.summer-detail-hero {
+  padding: 110px 24px 48px;
+  background:
+    radial-gradient(circle at top left, #dff3ff 0 26%, transparent 27%),
+    radial-gradient(circle at bottom right, #e6ffd8 0 24%, transparent 25%),
+    #fffaf5;
+  text-align: center;
+}
+
+.summer-detail-hero h1 {
+  margin: 0 0 18px;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 900;
+  color: #4169e1;
+}
+
+.summer-detail-hero p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.9;
+  font-weight: 700;
+}
+
+.summer-detail-main-image,
+.detail-photo {
+  margin: 26px 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #f6e5da;
+}
+
+.summer-detail-main-image img,
+.detail-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-block-alt {
+  background: #fff2e8;
+}
+
+.run-point-section {
+  background:
+    radial-gradient(circle at top right, #dff3ff 0 26%, transparent 27%),
+    #fffaf5;
+  text-align: center;
+}
+
+.note-section {
+  background: #fff2e8;
+}
+
+.note-list {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.note-list li {
+  position: relative;
+  padding: 14px 14px 14px 38px;
+  border-radius: 18px;
+  background: #fff;
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(120, 80, 60, 0.06);
+}
+
+.note-list li::before {
+  content: "※";
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  color: #4169e1;
+  font-weight: 900;
+}
+.summer-detail-logo {
+  max-width: 240px;
+  margin: 0 auto 20px;
+}
+
+.summer-detail-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.registration-section{
+
+    background:#FFFDF9;
+
+}
+
+
+.registration-steps{
+
+    display:grid;
+
+    gap:18px;
+
+    margin-top:28px;
+
+}
+
+
+.registration-step{
+
+    display:flex;
+
+    gap:16px;
+
+    padding:20px;
+
+    border-radius:24px;
+
+    background:white;
+
+    box-shadow:0 8px 24px rgba(120,80,60,.08);
+
+}
+
+
+.step-number{
+
+    width:42px;
+    height:42px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:#4169E1;
+
+    color:white;
+
+    font-size:20px;
+    font-weight:900;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.registration-step>div{
+
+    flex:1;
+
+}
+
+
+.registration-step h3{
+
+    margin:0 0 10px;
+
+    font-size:18px;
+
+    line-height:1.4;
+
+}
+
+
+.registration-step p{
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    font-weight:700;
+
+}
+
+
+.registration-image{
+
+    max-width:220px;
+
+    margin-top:14px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:2px solid #ECECEC;
+
+}
+
+
+.registration-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+.registration-step{
+
+    align-items:flex-start;
+
+}
+
+.line-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    margin-top:14px;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    background:#06C755;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    font-weight:900;
+
+}
+
+
+.line-button:hover{
+
+    opacity:.9;
+
+}
