@@ -612,6 +612,41 @@ body {
 
     font-weight:900;
 
+    transition:.25s;
+
+}
+
+.summer-category-card:hover::after{
+
+    transform:translateX(4px);
+
+}
+
+.summer-category-card.coming-soon{
+
+    cursor:default;
+
+    pointer-events:none;
+
+}
+
+.summer-category-card.coming-soon::after{
+
+    content:"Coming soon...";
+
+    color:#999;
+
+}
+
+.summer-category-card.coming-soon:hover::after{
+
+    transform:none;
+
+}
+.summer-category-card.coming-soon img{
+
+    filter:grayscale(.2) brightness(.9);
+
 }
 .pickup-title{
 
@@ -755,8 +790,11 @@ body {
     #fffaf5;
   text-align: center;
 }
-
-.photo-contest .primary-button {
+.photo-contest img{
+  width: 100%;
+  margin-bottom: 5%;
+}
+.primary-button {
   margin-top: 18px;
 }
 
@@ -1440,33 +1478,31 @@ body {
 
 
 .step-number{
-
-    width:42px;
-    height:42px;
+  aspect-ratio:1/1;
 
     flex-shrink:0;
-
-    border-radius:50%;
-
     background:#4169E1;
-
     color:white;
 
     font-size:20px;
     font-weight:900;
 
-    display:flex;
+    width: 42px;
+    height: 42px;
 
-    justify-content:center;
-    align-items:center;
+    min-width: 42px;
+    min-height: 42px;
 
+    flex: 0 0 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
-.registration-step>div{
-
-    flex:1;
-
+.registration-step > div:not(.step-number) {
+  flex: 1;
 }
 
 
@@ -1556,5 +1592,43 @@ body {
 .line-button:hover{
 
     opacity:.9;
+
+}
+
+.photo-hero-slider{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    overflow:hidden;
+
+}
+
+
+.photo-hero-slider img{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:0;
+
+    transition:opacity 1.2s ease;
+
+}
+
+
+.photo-hero-slider img.active{
+
+    opacity:1;
 
 }

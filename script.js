@@ -16,7 +16,9 @@ if (menuButton && fullscreenMenu) {
   });
 }
 
-const heroSlides = document.querySelectorAll(".hero-photo-slider img");
+const heroSlides = document.querySelectorAll(
+  ".hero-photo-slider img, .photo-hero-slider img"
+);
 let heroSlideIndex = 0;
 
 if (heroSlides.length > 0) {
