@@ -19,7 +19,7 @@ body {
   max-width: 430px;
   min-height: 100vh;
   margin: 0 auto;
-  background: #fffaf5;
+  background: rgba(255, 250, 245, 0.025);
   overflow: hidden;
   position: relative;
 }
@@ -127,7 +127,7 @@ body {
 
 .hero {
   padding-top: 92px;
-  background: #fffaf5;
+  background: #fffaf5ac;
 }
 
 .hero-text {
@@ -211,6 +211,7 @@ body {
 
 .section {
   padding: 56px 24px;
+  background: #fffaf5ac;
 }
 
 .section h2 {
@@ -1658,4 +1659,26 @@ body {
 
     color:#999;
 
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  background: #f1dfd0;
+  color: #4a3428;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background-image: url("img/bg.png");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 430px auto;
+
+  pointer-events: none;
 }
