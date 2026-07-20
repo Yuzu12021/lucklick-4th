@@ -2324,3 +2324,37 @@ body::before {
   font-size: 11px;
   font-weight: 700;
 }
+
+/* ========================================
+   ご予約・お問い合わせ
+======================================== */
+
+.day1-note h3{
+  margin:0 0 12px;
+  color:#4a3428;
+  font-size:22px;
+  font-weight:900;
+  text-align:center;
+}
+
+.day1-contact-buttons{
+  display:grid;
+  gap:10px;
+  margin:20px 0;
+}
+
+.day1-link-button.line{
+  background:#7bcf92;
+}
+
+.day1-link-button.phone{
+  background:#8db6d9;
+}
+
+.day1-contact-small{
+  margin:18px 0 0;
+  color:#72584c;
+  font-size:12px !important;
+  line-height:1.8 !important;
+  text-align:center;
+}
