@@ -3,54 +3,559 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuckLick 4周年記念イベント｜DAY 2</title>
+
+  <title>LuckLick 4周年記念イベント｜8月8日</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <main class="site-shell">
+  <main class="site">
+
+    <!-- header -->
     <header class="site-header">
-      <a class="header-logo" href="index.html#top" aria-label="LuckLick トップへ">
+      <a
+        class="header-logo"
+        href="index.html#top"
+        aria-label="LuckLick トップへ"
+      >
         <img src="img/logo.png" alt="LuckLick" />
       </a>
-      <button class="menu-button" type="button" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="fullscreen-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <nav id="global-nav" class="global-nav" aria-hidden="true">
+    </header>
+
+    <!-- fullscreen menu -->
+    <nav
+      id="fullscreen-menu"
+      class="fullscreen-menu"
+      aria-hidden="true"
+    >
+      <div class="fullscreen-menu-inner">
         <a href="index.html#about">4周年イベント</a>
         <a href="index.html#schedule">3日間の内容</a>
         <a href="photo-contest.html">フォトコンテスト</a>
-        <a href="index.html#campaign">通し企画</a>
-        <a href="index.html#entry">参加・応募</a>
-      </nav>
-    </header>
+        <a href="summer_run.html">ドッグラン無料開放</a>
 
-    <section class="sub-hero section reveal">
-      <p class="section-label">DAY 2 / 8/8 Sat.</p>
-      <h1>4周年記念イベント<br />8/8 Sat.</h1>
-      <p>愛犬の身体やケアについて学べるセミナーと、ポーセラーツのワークショップを予定しています。</p>
+        <a class="disabled-link" href="#">
+          フード販売
+          <small>Coming soon...</small>
+        </a>
+
+        <a class="disabled-link" href="#">
+          記念グッズ
+          <small>Coming soon...</small>
+        </a>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="day1-hero day2-hero fade-up">
+      <p class="section-label">
+        LUCKLICK 4TH ANNIVERSARY
+      </p>
+
+      <p class="day1-date">
+        DAY 2　8.8 SAT.
+      </p>
+
+      <h1>
+        愛犬のからだを知って、<br />
+        <span>もっと健やかな毎日へ。</span>
+      </h1>
+
+      <p class="day1-hero-copy">
+        からだのケアについて学べるセミナーや、<br />
+        愛犬と楽しめるワークショップを開催します。
+      </p>
     </section>
 
-    <section class="section reveal">
-      <p class="section-label">DETAIL</p>
-      <h2>詳細は準備中です</h2>
-      <div class="coming-card reveal">
-        <h2>Coming soon...</h2>
-        <p>タイムスケジュール、予約方法、参加費などは内容が確定次第こちらに掲載します。</p>
+    <div
+      class="hero-decoration-line"
+      aria-hidden="true"
+    ></div>
+
+    <!-- event schedule -->
+    <section class="section day1-schedule day2-schedule">
+
+      <div class="day1-heading fade-up">
+        <p class="section-label">
+          EVENT SCHEDULE
+        </p>
+
+        <h2>
+          8月8日（土）のイベント
+        </h2>
+
+        <p>
+          気になるイベントをチェックしてご参加ください。
+        </p>
       </div>
-      <div class="detail-list">
-        <article class="reveal"><strong>愛犬を見る目がやさしく変わる体験型セミナー（仮）</strong><span>by 理学療法士 ○○先生</span></article>
-        <article class="reveal"><strong>スキンケアについて（仮）</strong><span>by 動物看護師 ○○先生</span></article>
-        <article class="reveal"><strong>筋肉について</strong><span>by 動物看護師 ○○先生</span></article>
-        <article class="reveal"><strong>ワークショップ②</strong><span>ポーセラーツ</span></article>
+
+      <div class="day1-event-list">
+
+        <!-- 01 犬と人のからだ講座 -->
+<article class="day1-event-card class-card fade-up">
+
+  <div class="day1-event-time">
+    <span>11:00〜12:00</span>
+    <small>SEMINAR</small>
+  </div>
+
+  <div class="day1-event-image">
+    <img
+      src="img/day2-event01.jpg"
+      alt="知るともっと愛おしくなる 犬と人のからだ講座"
+    />
+  </div>
+
+  <div class="day1-event-body">
+
+    <p class="day1-event-label">
+      犬と人のからだを楽しく学ぼう
+    </p>
+
+    <h3>
+      知るともっと愛おしくなる♡<br />
+      犬と人のからだ講座
+    </h3>
+
+    <p class="day1-event-lead">
+      愛犬の鼓動を聴きながら、犬と人のからだの違いを学びます。
+    </p>
+
+    <div class="day1-badges">
+      <span class="day1-badge mint">
+        参加費無料
+      </span>
+
+      <span class="day1-badge yellow">
+        予約優先
+      </span>
+    </div>
+
+    <p class="day1-description">
+      肩こりのセルフケアや、犬と人のからだの違いを
+      楽しく学べる講座です。<br /><br />
+
+      聴診器を使って、愛犬の心臓の鼓動を聴く体験もできます。
+      愛犬のからだをもっと知ることで、
+      いつもの暮らしがさらに愛おしく感じられるかもしれません。
+    </p>
+
+    <div class="day1-speaker">
+      <div class="day1-speaker-image">
+        <img
+          src="img/day2-01.jpg"
+          alt="講師 松本聡子さん"
+        />
       </div>
-      <a class="primary-button" href="index.html#schedule">トップへ戻る</a>
+
+      <div class="day1-speaker-text">
+        <span>講師</span>
+
+        <h4>
+          松本 聡子
+        </h4>
+        <p>
+          WanHalo代表 理学療法士 
+        </p>
+      </div>
+    </div>
+
+    <dl class="day1-info">
+      <div class="day1-info-row">
+        <dt>開催時間</dt>
+        <dd>11:00〜12:00</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加費</dt>
+        <dd>無料</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加方法</dt>
+        <dd>予約優先</dd>
+      </div>
+    </dl>
+
+    <div class="day1-links">
+      <a
+        class="day1-link-button instagram"
+        href="https://www.instagram.com/wan_halo_dog_anatomyseitai/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+  </div>
+</article>
+
+
+<!-- 02 愛犬のお肌を育てるスキンケア講座 -->
+<article class="day1-event-card class-card fade-up">
+
+  <div class="day1-event-time">
+    <span>13:00〜14:00</span>
+    <small>SEMINAR</small>
+  </div>
+
+  <div class="day1-event-image">
+    <img
+      src="img/day2-event02.jpg"
+      alt="愛犬のお肌を育てるスキンケア講座"
+    />
+  </div>
+
+  <div class="day1-event-body">
+
+    <p class="day1-event-label">
+      毎日のおうちケアに
+    </p>
+
+    <h3>
+      愛犬のお肌を育てる<br />
+      スキンケア講座
+    </h3>
+
+    <p class="day1-event-lead">
+      愛犬のお肌を守る、最新のスキンケアを学びませんか？
+    </p>
+
+    <div class="day1-badges">
+      <span class="day1-badge pink">
+        参加費 1,000円
+      </span>
+
+      <span class="day1-badge yellow">
+        予約優先
+      </span>
+    </div>
+
+    <p class="day1-description">
+      繰り返すお肌のトラブルを予防するために、
+      皮膚のバリア機能を守るセルフケアや、
+      シャンプー・保湿剤の選び方についてお伝えします。<br /><br />
+
+      耳や爪、肛門腺などのトラブルの予防についてもご紹介。
+      最新のスキンケアの考え方を、
+      愛犬のおうちケアに取り入れてみませんか？
+    </p>
+
+    <p class="day1-event-note">
+      ※CAスキンケアセオリー保湿剤ほか、関連商品の販売があります。
+    </p>
+
+    <div class="day1-speaker">
+      <div class="day1-speaker-image">
+        <img
+          src="img/day2-02.jpg"
+          alt="講師 愛玩動物看護師 青木めぐみさん"
+        />
+      </div>
+
+      <div class="day1-speaker-text">
+        <span>講師</span>
+
+        <h4>
+          青木 めぐみ
+        </h4>
+
+        <p>
+          愛玩動物看護師
+        </p>
+      </div>
+    </div>
+
+    <dl class="day1-info">
+      <div class="day1-info-row">
+        <dt>開催時間</dt>
+        <dd>13:00〜14:00</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加費</dt>
+        <dd>1,000円</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加方法</dt>
+        <dd>予約優先</dd>
+      </div>
+    </dl>
+
+    <div class="day1-links">
+      <a
+        class="day1-link-button instagram"
+        href="https://www.instagram.com/mofumofu.oteate_megumi/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+  </div>
+</article>
+
+
+<!-- 03 愛犬の健康寿命を伸ばすには筋肉が重要！？ -->
+<article class="day1-event-card class-card fade-up">
+
+  <div class="day1-event-time">
+    <span>15:00〜16:00</span>
+    <small>SEMINAR</small>
+  </div>
+
+  <div class="day1-event-image">
+    <img
+      src="img/day2-event03.jpg"
+      alt="愛犬の健康寿命を伸ばすには筋肉が重要"
+    />
+  </div>
+
+  <div class="day1-event-body">
+
+    <p class="day1-event-label">
+      元気に長く歩き続けるために
+    </p>
+
+    <h3>
+      愛犬の健康寿命を伸ばすには<br />
+      筋肉が重要！？
+    </h3>
+
+    <p class="day1-event-lead">
+      あの子の若々しさは、筋肉からきているかも！
+    </p>
+
+    <div class="day1-badges">
+      <span class="day1-badge pink">
+        参加費 1,000円
+      </span>
+
+      <span class="day1-badge mint">
+        おうちトレーニング
+      </span>
+    </div>
+
+    <p class="day1-description">
+      筋肉が大切なのはなんとなく分かるけれど、
+      何がそんなに重要なのでしょうか？<br /><br />
+
+      日頃あまり運動をしない子も、
+      たくさん運動する子も知っておくと役立つ、
+      「筋肉があると良いこと5選」をご紹介します。<br /><br />
+
+      おうちでできる簡単なトレーニングもお伝えします。
+    </p>
+
+    <p class="day1-event-note">
+      ※トレーニングの実践はありません。<br />
+      ※おすすめのサプリメント販売があります。
+    </p>
+
+    <div class="day1-speaker">
+      <div class="day1-speaker-image">
+        <img
+          src="img/day2-02.jpg"
+          alt="モフモフオテアテ 愛玩動物看護師 青木めぐみさん"
+        />
+      </div>
+
+      <div class="day1-speaker-text">
+        <span>講師</span>
+
+        <h4>
+          青木 めぐみ
+        </h4>
+
+        <p>
+          愛玩動物看護師
+        </p>
+      </div>
+    </div>
+
+    <dl class="day1-info">
+      <div class="day1-info-row">
+        <dt>開催時間</dt>
+        <dd>15:00〜16:00</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加費</dt>
+        <dd>1,000円</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加方法</dt>
+        <dd>予約優先</dd>
+      </div>
+    </dl>
+<div class="day1-links">
+      <a
+        class="day1-link-button instagram"
+        href="https://www.instagram.com/mofumofu.oteate_megumi/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+
+  </div>
+</article>
+
+        <!-- 04 ポーセラーツ -->
+        <article class="day1-event-card workshop-card fade-up">
+
+          <div class="day1-event-time">
+            <span>時間未定</span>
+            <small>WORKSHOP</small>
+          </div>
+
+          <div class="day1-event-image">
+            <img
+              src="img/day2-event04.jpg"
+              alt="ポーセラーツワークショップ"
+            />
+          </div>
+
+          <div class="day1-event-body">
+
+            <p class="day1-event-label">
+              オリジナル作品づくり
+            </p>
+
+            <h3>
+              ポーセラーツ<br />
+              ワークショップ
+            </h3>
+
+            <p class="day1-event-lead">
+              世界にひとつだけの作品をつくろう。
+            </p>
+
+            <div class="day1-badges">
+              <span class="day1-badge mint">
+                ワークショップ
+              </span>
+
+              <span class="day1-badge yellow">
+                予約優先
+              </span>
+            </div>
+
+            <p class="day1-description">
+              犬種別のデザインから、ナチュラルでかわいいお花模様まで。
+              わんちゃん用のフードボウルや小物入れを
+              自由にデザインしていただけます♪
+
+              初めての方にも楽しんでいただける内容を予定しています。
+            </p>
+
+            <!-- 講師紹介 -->
+            <div class="day1-speaker">
+              <div class="day1-speaker-image">
+                <img
+                  src="img/day2-03.jpg"
+                  alt="ポーセラーツワークショップ講師"
+                />
+              </div>
+
+              <div class="day1-speaker-text">
+                <span>講師</span>
+
+                <h4>
+                  Namilia
+                </h4>
+
+                <p>
+                  ポーセラーツサロン
+                </p>
+              </div>
+            </div>
+
+            <dl class="day1-info">
+
+              <div class="day1-info-row">
+                <dt>開催時間</dt>
+                <dd>決まり次第お知らせします</dd>
+              </div>
+
+              <div class="day1-info-row">
+                <dt>参加費</dt>
+                <dd>3,500円～</dd>
+              </div>
+
+              <div class="day1-info-row">
+                <dt>参加方法</dt>
+                <dd>予約優先</dd>
+              </div>
+            </dl>
+
+            <div class="day1-links">
+              <a
+                class="day1-link-button instagram"
+                href="https://www.instagram.com/namilia_73/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- notice -->
+      <div class="day1-note fade-up">
+        <p>
+          <strong>ご参加について</strong><br />
+
+          開催時間や参加費、予約方法などの詳しいご案内は、
+          決まり次第こちらのページでお知らせします。
+          イベント内容・開催時間は変更になる場合があります。
+        </p>
+      </div>
+
+      <div class="day1-back fade-up">
+        <a
+          class="primary-button"
+          href="index.html#schedule"
+        >
+          3日間のスケジュールへ戻る
+        </a>
+      </div>
+
     </section>
 
+    <!-- footer -->
     <footer class="site-footer">
-      <img src="img/logo.png" alt="LuckLick" />
-      <p>LuckLick 4th Anniversary Event</p>
+      <p>
+        LuckLick 4th Anniversary Event
+      </p>
+
+      <small>
+        © LuckLick
+      </small>
     </footer>
+
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

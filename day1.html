@@ -3,52 +3,355 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuckLick 4周年記念イベント｜DAY 1</title>
+
+  <title>LuckLick 4周年記念イベント｜8月7日</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <main class="site-shell">
+  <main class="site">
+
+    <!-- header -->
     <header class="site-header">
-      <a class="header-logo" href="index.html#top" aria-label="LuckLick トップへ">
+      <a
+        class="header-logo"
+        href="index.html#top"
+        aria-label="LuckLick トップへ"
+      >
         <img src="img/logo.png" alt="LuckLick" />
       </a>
-      <button class="menu-button" type="button" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="fullscreen-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <nav id="global-nav" class="global-nav" aria-hidden="true">
+    </header>
+
+    <!-- fullscreen menu -->
+    <nav
+      id="fullscreen-menu"
+      class="fullscreen-menu"
+      aria-hidden="true"
+    >
+      <div class="fullscreen-menu-inner">
         <a href="index.html#about">4周年イベント</a>
         <a href="index.html#schedule">3日間の内容</a>
         <a href="photo-contest.html">フォトコンテスト</a>
-        <a href="index.html#campaign">通し企画</a>
-        <a href="index.html#entry">参加・応募</a>
-      </nav>
-    </header>
+        <a href="summer_run.html">ドッグラン無料開放</a>
 
-    <section class="sub-hero section reveal">
-      <p class="section-label">DAY 1 / 8/7 Fri.</p>
-      <h1>4周年記念イベント<br />8/7 Fri.</h1>
-      <p>お口の教室、ワークショップ①を予定しています。</p>
+        <a class="disabled-link" href="#">
+          フード販売
+          <small>Coming soon...</small>
+        </a>
+
+        <a class="disabled-link" href="#">
+          記念グッズ
+          <small>Coming soon...</small>
+        </a>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="day1-hero fade-up">
+      <p class="section-label">
+        LUCKLICK 4TH ANNIVERSARY
+      </p>
+
+      <p class="day1-date">
+        DAY 1　8.7 FRI.
+      </p>
+
+      <h1>
+        愛犬と一緒に<br />
+        <span>学んで、癒やされる一日。</span>
+      </h1>
+
+      <p class="day1-hero-copy">
+        お口の健康を学べる特別教室と、<br />
+        飼い主さま向けのハンドトリートメントを開催します。
+      </p>
     </section>
 
-    <section class="section reveal">
-      <p class="section-label">DETAIL</p>
-      <h2>詳細は準備中です</h2>
-      <div class="coming-card reveal">
-        <h2>Coming soon...</h2>
-        <p>タイムスケジュール、予約方法、参加費などは内容が確定次第こちらに掲載します。</p>
+    <div
+      class="hero-decoration-line"
+      aria-hidden="true"
+    ></div>
+
+    <!-- event schedule -->
+    <section class="section day1-schedule">
+
+      <div class="day1-heading fade-up">
+        <p class="section-label">
+          EVENT SCHEDULE
+        </p>
+
+        <h2>
+          8月7日（金）のイベント
+        </h2>
+
+        <p>
+          気になるイベントをチェックしてご参加ください。
+        </p>
       </div>
-      <div class="detail-list">
-        <article class="reveal"><strong>お口の教室</strong><span>by ぽ欄動物病院 ○○院長</span></article>
-        <article class="reveal"><strong>ワークショップ①</strong><span>詳細未定</span></article>
+
+      <div class="day1-event-list">
+
+        <!-- oral health class -->
+        <article class="day1-event-card class-card fade-up">
+
+  <div class="day1-event-time">
+    <span>11:00〜12:30</span>
+    <small>SPECIAL CLASS</small>
+  </div>
+
+  <div class="day1-event-image">
+    <img
+      src="img/day1-event.jpg"
+      alt="お口の教室"
+    />
+  </div>
+
+  <div class="day1-event-body">
+
+    <p class="day1-event-label">
+      お口の健康講座
+    </p>
+
+    <h3>
+      お口の教室
+    </h3>
+
+    <p class="day1-event-lead">
+      お口の健康を通して、家族の未来を守る。
+    </p>
+
+    <div class="day1-badges">
+      <span class="day1-badge pink">
+        参加費無料
+      </span>
+
+      <span class="day1-badge yellow">
+        予約優先
+      </span>
+    </div>
+
+    <p class="day1-description">
+      あのポラン動物病院・竹井院長がLuckLickに登場！
+      歯石・口臭・ケアの「正しい最初の一歩」を
+      優しく解説します。
+      病院では聞きづらかった疑問も、
+      安心して相談できる特別教室です。
+    </p>
+
+    <div class="day1-speaker">
+      <div class="day1-speaker-image">
+        <img
+          src="img/polan.jpg"
+          alt="ポラン動物病院 竹井院長"
+        />
       </div>
-      <a class="primary-button" href="index.html#schedule">トップへ戻る</a>
+
+      <div class="day1-speaker-text">
+        <span>講師</span>
+
+        <h4>
+          竹井院長
+        </h4>
+
+        <p>
+          ポラン動物病院
+        </p>
+      </div>
+    </div>
+
+    <dl class="day1-info">
+
+      <div class="day1-info-row">
+        <dt>開催時間</dt>
+        <dd>11:00〜12:30</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加費</dt>
+        <dd>無料</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>参加方法</dt>
+        <dd>予約優先</dd>
+      </div>
+    </dl>
+<div class="day1-links">
+
+    <a
+        href="https://www.polan-ah.com/"
+        target="_blank"
+        rel="noopener"
+        class="day1-link-button"
+    >
+        ポラン動物病院 公式サイト
+    </a>
+
+    <a
+        href="https://www.instagram.com/polan_dental?igsh=MWYyYWt6ajV1Z2ZtNw%3D%3D"
+        target="_blank"
+        rel="noopener"
+        class="day1-link-button instagram"
+    >
+        Instagram
+    </a>
+
+</div>
+  </div>
+</article>
+
+        <!-- hand treatment -->
+        <article class="day1-event-card workshop-card fade-up">
+
+          <div class="day1-event-time">
+            <span>13:00〜15:30</span>
+            <small>WORKSHOP</small>
+          </div>
+<div class="day1-event-image">
+    <img
+        src="img/day1-work.jpg"
+        alt="ハンドトリートメント"
+    />
+</div>
+          <div class="day1-event-body">
+
+            <p class="day1-event-label">
+              飼い主さま向け
+            </p>
+
+            <h3>
+              ハンドトリートメント
+            </h3>
+
+            <div class="day1-badges">
+              <span class="day1-badge mint">
+                各回15分
+              </span>
+
+              <span class="day1-badge blue">
+                1回 ¥1,000
+              </span>
+            </div>
+
+            <p class="day1-description">
+              飼い主さま向けのハンドトリートメントです。
+              15分間の施術を、30分ごとの時間枠で受け付けます。
+              日頃頑張っている手を、やさしくほぐしてリフレッシュしませんか？
+            </p>
+
+            <div class="day1-speaker">
+      <div class="day1-speaker-image">
+        <img
+          src="img/day1-01.jpg"
+          alt="AromaHowaly"
+        />
+      </div>
+
+      <div class="day1-speaker-text">
+        <span>講師</span>
+
+        <h4>
+          Aloma Howaly
+        </h4>
+
+        <p>
+          アロマハンドセラピスト
+        </p>
+      </div>
+    </div>
+            <dl class="day1-info">
+
+              <div class="day1-info-row">
+                <dt>所要時間</dt>
+                <dd>各回15分</dd>
+              </div>
+
+              <div class="day1-info-row">
+                <dt>参加費</dt>
+                <dd>1回 ¥1,000</dd>
+              </div>
+            </dl>
+<div class="day1-links">
+
+    <a
+        href="https://www.instagram.com/aromahowaly45?igsh=dng0djNwZjc2MjZu"
+        target="_blank"
+        rel="noopener"
+        class="day1-link-button instagram"
+    >
+        講師Instagram
+    </a>
+
+</div>
+            <p class="day1-slots-title">
+              開催時間
+            </p>
+
+            <ul
+              class="day1-slots"
+              aria-label="ハンドトリートメント開催時間"
+            >
+              <li>13:00〜</li>
+              <li>13:30〜</li>
+              <li>14:00〜</li>
+              <li>14:30〜</li>
+              <li>15:00〜</li>
+              <li>15:30〜</li>
+            </ul>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- notice -->
+      <div class="day1-note fade-up">
+        <p>
+          <strong>ご参加について</strong><br />
+
+          予約方法や当日の受付場所など、
+          追加のご案内は決まり次第こちらのページでお知らせします。
+          イベント内容・開催時間は変更になる場合があります。
+        </p>
+      </div>
+
+      <div class="day1-back fade-up">
+        <a
+          class="primary-button"
+          href="index.html#schedule"
+        >
+          3日間のスケジュールへ戻る
+        </a>
+      </div>
+
     </section>
 
+    <!-- footer -->
     <footer class="site-footer">
-      <img src="img/logo.png" alt="LuckLick" />
-      <p>LuckLick 4th Anniversary Event</p>
+      <p>
+        LuckLick 4th Anniversary Event
+      </p>
+
+      <small>
+        © LuckLick
+      </small>
     </footer>
+
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -3,55 +3,571 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuckLick 4周年記念イベント｜DAY 3</title>
+
+  <title>LuckLick 4周年記念イベント｜8月9日</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <main class="site-shell">
+  <main class="site">
+
+    <!-- header -->
     <header class="site-header">
-      <a class="header-logo" href="index.html#top" aria-label="LuckLick トップへ">
+      <a
+        class="header-logo"
+        href="index.html#top"
+        aria-label="LuckLick トップへ"
+      >
         <img src="img/logo.png" alt="LuckLick" />
       </a>
-      <button class="menu-button" type="button" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="fullscreen-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <nav id="global-nav" class="global-nav" aria-hidden="true">
+    </header>
+
+    <!-- fullscreen menu -->
+    <nav
+      id="fullscreen-menu"
+      class="fullscreen-menu"
+      aria-hidden="true"
+    >
+      <div class="fullscreen-menu-inner">
         <a href="index.html#about">4周年イベント</a>
         <a href="index.html#schedule">3日間の内容</a>
         <a href="photo-contest.html">フォトコンテスト</a>
-        <a href="index.html#campaign">通し企画</a>
-        <a href="index.html#entry">参加・応募</a>
-      </nav>
-    </header>
+        <a href="summer_run.html">ドッグラン無料開放</a>
 
-    <section class="sub-hero section reveal">
-      <p class="section-label">DAY 3 / 8/9 Sun.</p>
-      <h1>4周年記念イベント<br />8/9 Sun.</h1>
-      <p>ごはん相談会、夏のごはんづくり、譲渡会などを予定しています。</p>
+        <a class="disabled-link" href="#">
+          フード販売
+          <small>Coming soon...</small>
+        </a>
+
+        <a class="disabled-link" href="#">
+          記念グッズ
+          <small>Coming soon...</small>
+        </a>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="day1-hero day3-hero fade-up">
+      <p class="section-label">
+        LUCKLICK 4TH ANNIVERSARY
+      </p>
+
+      <p class="day1-date">
+        DAY 3　8.9 SUN.
+      </p>
+
+      <h1>
+        新しい出会いと、<br />
+        <span>愛犬との健やかな時間を。</span>
+      </h1>
+
+      <p class="day1-hero-copy">
+        保護犬の譲渡会を中心に、手作りご飯教室や<br />
+        癒やしのワークショップを開催します。
+      </p>
     </section>
 
-    <section class="section reveal">
-      <p class="section-label">DETAIL</p>
-      <h2>詳細は準備中です</h2>
-      <div class="coming-card reveal">
-        <h2>Coming soon...</h2>
-        <p>タイムスケジュール、予約方法、参加費などは内容が確定次第こちらに掲載します。</p>
+    <div
+      class="hero-decoration-line"
+      aria-hidden="true"
+    ></div>
+
+    <!-- event schedule -->
+    <section class="section day1-schedule day3-schedule">
+
+      <div class="day1-heading fade-up">
+        <p class="section-label">
+          EVENT SCHEDULE
+        </p>
+
+        <h2>
+          8月9日（日）のイベント
+        </h2>
+
+        <p>
+          わんちゃんと一緒でも、お連れでない方でもご参加いただけます。
+        </p>
       </div>
-      <div class="detail-list">
-        <article class="reveal"><strong>ごはん相談会</strong><span>by 管理栄養士 ○○先生</span></article>
-        <article class="reveal"><strong>猛暑対策のごはんづくり</strong><span>詳細未定</span></article>
-        <article class="reveal"><strong>ハレの日のケーキ作り</strong><span>詳細未定</span></article>
-        <article class="reveal"><strong>譲渡会</strong><span>詳細未定</span></article>
-        <article class="reveal"><strong>ワークショップ③</strong><span>未定</span></article>
+
+      <div class="day1-event-list">
+
+        <!-- 01 譲渡会 -->
+        <article class="day1-event-card class-card fade-up">
+
+          <div class="day1-event-time">
+            <span>11:00〜15:00</span>
+            <small>ADOPTION EVENT</small>
+          </div>
+
+          <div class="day1-event-image">
+            <img
+              src="img/day3-event01.jpg"
+              alt="保護犬の譲渡会とミニマルシェ"
+            />
+          </div>
+
+          <div class="day1-event-body">
+
+            <p class="day1-event-label">
+              新しい家族との出会い
+            </p>
+
+            <h3>
+              保護犬の譲渡会
+            </h3>
+
+            <p class="day1-event-lead">
+              保護犬たちとの出会いをつなぐ、特別な一日です。
+            </p>
+
+            <div class="day1-badges">
+              <span class="day1-badge pink">
+                入場無料
+              </span>
+
+              <span class="day1-badge mint">
+                ミニマルシェ同時開催
+              </span>
+            </div>
+
+            <p class="day1-description">
+              保護犬たちの新しい家族との出会いをつなぐ、
+              譲渡会を開催します。<br /><br />
+
+              わんちゃんと一緒にご来場いただくことはもちろん、
+              わんちゃんをお連れでないお客様も
+              ふらっとお立ち寄りいただけます。
+            </p>
+
+            <div class="day1-subsection">
+              <h4>
+                ミニマルシェも同時開催
+              </h4>
+
+              <p>
+                おやつやパラコードグッズなど、
+                掘り出し物を多数ご用意しています。
+                ミニマルシェの売り上げは、
+                保護団体様への寄付となります。
+              </p>
+            </div>
+
+            <!-- 団体紹介 -->
+            <div class="day1-speaker">
+              <div class="day1-speaker-image">
+                <img
+                  src="img/day3-01.jpg"
+                  alt="にくきゅうライフ"
+                />
+              </div>
+
+              <div class="day1-speaker-text">
+                <span>譲渡会主催</span>
+
+                <h4>
+                  にくきゅうライフ
+                </h4>
+
+                <p>
+                  保護犬譲渡活動
+                </p>
+              </div>
+            </div>
+
+            <dl class="day1-info">
+              <div class="day1-info-row">
+                <dt>開催時間</dt>
+                <dd>11:00〜15:00</dd>
+              </div>
+
+              <div class="day1-info-row">
+                <dt>開催場所</dt>
+                <dd>LuckLick 3F 室内ドッグラン</dd>
+              </div>
+
+              <div class="day1-info-row">
+                <dt>入場料</dt>
+                <dd>無料</dd>
+              </div>
+
+              <div class="day1-info-row">
+                <dt>主催</dt>
+                <dd>にくきゅうライフ</dd>
+              </div>
+            </dl>
+
+            <p class="day1-event-note">
+              ※わんちゃんをお連れのお客様は、
+              マナーウェアの着用をお願いいたします。<br />
+              ※譲渡会開催に伴い、8月9日（日）のみ
+              室内ドッグランは通常利用を休止します。
+            </p>
+
+            <div class="day1-links">
+              <a
+                class="day1-link-button instagram"
+                href="https://www.instagram.com/299__life/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                にくきゅうライフ Instagram
+              </a>
+              <a
+                class="day1-link-button instagram"
+                href="https://299life.wixsite.com/website?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGn1y0Ce7OUo1SlKOZv7wQjYPicb8Sef5qlDIYEuFUxh1lbC-fsSavO-VDN5Cg_aem_x1K4-xqTRN19UwtOA8gKUQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                にくきゅうライフ 公式HP
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- 02 手作りご飯教室 -->
+        <article class="day1-event-card workshop-card fade-up">
+
+  <div class="day1-event-time">
+    <span>12:00〜 / 15:00〜</span>
+    <small>COOKING CLASS</small>
+  </div>
+
+  <div class="day1-event-image">
+    <img
+      src="img/day3-event02.jpg"
+      alt="愛犬のための手作りご飯教室"
+    />
+  </div>
+
+  <div class="day1-event-body">
+
+    <p class="day1-event-label">
+      愛犬のためのおいしい食育
+    </p>
+
+    <h3>
+      手作りご飯教室
+    </h3>
+
+    <p class="day1-event-lead">
+      季節や特別な日に合わせた、愛犬のご飯を一緒に作ります。
+    </p>
+
+    <div class="day1-badges">
+      <span class="day1-badge pink">
+        各回 3,000円
+      </span>
+
+      <span class="day1-badge mint">
+        ワンコの試食あり
+      </span>
+    </div>
+
+    <p class="day1-description">
+      管理栄養士の藤沼貴子先生による、
+      愛犬のための手作りご飯教室です。<br /><br />
+
+      暑い夏を元気に過ごすためのご飯と、
+      記念日などの特別な日に楽しめるケーキ作り。
+      テーマの異なる2つの教室を開催します。
+    </p>
+
+    <!-- 各回の案内 -->
+    <div class="day3-class-list">
+
+      <section class="day3-class-card">
+        <div class="day3-class-header">
+          <span class="day3-class-number">
+            1回目
+          </span>
+
+          <time datetime="2026-08-09T12:00">
+            12:00〜13:00
+          </time>
+        </div>
+
+        <div class="day3-class-body">
+          <p class="day3-class-label">
+            暑い夏を元気に乗り切る
+          </p>
+
+          <h4>
+            猛暑対策のごはん作り
+          </h4>
+
+          <p>
+            暑さで食欲が落ちやすい季節にも取り入れやすい、
+            夏にうれしい手作りごはんを学びます。
+          </p>
+        </div>
+      </section>
+
+      <section class="day3-class-card">
+        <div class="day3-class-header">
+          <span class="day3-class-number">
+            2回目
+          </span>
+
+          <time datetime="2026-08-09T15:00">
+            15:00〜16:00
+          </time>
+        </div>
+
+        <div class="day3-class-body">
+          <p class="day3-class-label">
+            特別な日をもっと楽しく
+          </p>
+
+          <h4>
+            ハレの日のケーキ作り
+          </h4>
+
+          <p>
+            お誕生日や記念日など、
+            愛犬との特別な日に楽しめるケーキを作ります。
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 講師紹介 -->
+    <div class="day1-speaker">
+      <div class="day1-speaker-image">
+        <img
+          src="img/day3-02.jpg"
+          alt="管理栄養士 藤沼貴子先生"
+        />
       </div>
-      <a class="primary-button" href="index.html#schedule">トップへ戻る</a>
+
+      <div class="day1-speaker-text">
+        <span>講師</span>
+
+        <h4>
+          藤沼 貴子
+        </h4>
+
+        <p>
+          管理栄養士
+        </p>
+      </div>
+    </div>
+
+    <dl class="day1-info">
+      <div class="day1-info-row">
+        <dt>参加費</dt>
+        <dd>各回 3,000円</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>同伴</dt>
+        <dd>お連れ様1名まで</dd>
+      </div>
+
+      <div class="day1-info-row">
+        <dt>試食</dt>
+        <dd>わんちゃんの試食あり</dd>
+      </div>
+    </dl>
+
+    <div class="day1-links">
+      <a
+        class="day1-link-button instagram"
+        href="https://www.instagram.com/takakofujinuma/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+
+
+  </div>
+</article>
+
+
+        <!-- 03 温熱ナチュラルケア -->
+        <article class="day1-event-card class-card fade-up">
+
+          <div class="day1-event-time">
+            <span>11:00〜18:00</span>
+            <small>WORKSHOP</small>
+          </div>
+
+          <div class="day1-event-image">
+            <img
+              src="img/day3-event03.jpg"
+              alt="飼い主様向け温熱ナチュラルケア"
+            />
+          </div>
+
+          <div class="day1-event-body">
+
+            <p class="day1-event-label">
+              飼い主様向けワークショップ
+            </p>
+
+            <h3>
+              温熱ナチュラルケア
+            </h3>
+
+            <p class="day1-event-lead">
+              テラヘルツと遠赤外線で、からだを優しく温めます。
+            </p>
+
+            <div class="day1-badges">
+              <span class="day1-badge pink">
+                15分 1,000円
+              </span>
+
+              <span class="day1-badge yellow">
+                30分ごとに受付
+              </span>
+            </div>
+
+            <p class="day1-description">
+              テラヘルツと遠赤外線の力で、
+              身体を優しく温めながら血液の巡りを整えます。<br /><br />
+
+              コリや痛みの緩和、リラックス、
+              疲労回復などが期待できるナチュラルケアです。
+              飼い主様ご自身の身体をいたわる時間を
+              過ごしてみませんか？
+            </p>
+
+            <div class="day1-speaker">
+              <div class="day1-speaker-image">
+                <img
+                  src="img/day3-03.jpg"
+                  alt="温熱ナチュラルケア担当 貫井さん"
+                />
+              </div>
+
+              <div class="day1-speaker-text">
+                <span>担当</span>
+
+                <h4>
+                  Luana
+                </h4>
+
+                <p>
+                  温熱ナチュラルケア
+                </p>
+              </div>
+            </div>
+
+            <dl class="day1-info">
+              <div class="day1-info-row">
+                <dt>施術時間</dt>
+                <dd>1枠15分</dd>
+              </div>
+
+              <div class="day1-info-row">
+                <dt>参加費</dt>
+                <dd>1,000円</dd>
+              </div>
+
+            </dl>
+
+            <div class="day3-time-box">
+
+  <p class="day3-time-label">
+    受付時間
+  </p>
+
+  <p class="day3-time-main">
+    11:00〜17:30
+  </p>
+
+  <p class="day3-time-sub">
+    30分ごとに受付
+  </p>
+
+  <div class="day3-time-list">
+    <span>11:00</span>
+    <span>11:30</span>
+    <span>12:00</span>
+    <span>12:30</span>
+    <span>13:00</span>
+    <span>13:30</span>
+    <span>15:00</span>
+    <span>15:30</span>
+    <span>16:00</span>
+    <span>16:30</span>
+    <span>17:00</span>
+    <span>17:30</span>
+  </div>
+
+  <p class="day3-time-note">
+    ※最終受付 17:30
+  </p>
+
+</div>
+            <div class="day1-links">
+              <a
+                class="day1-link-button instagram"
+                href="https://www.instagram.com/luana_naturalcare/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- notice -->
+      <div class="day1-note fade-up">
+        <p>
+          <strong>ご参加について</strong><br />
+
+          イベントによって予約方法や定員が異なります。
+          詳細が決まり次第、こちらのページでお知らせします。
+          内容や開催時間は変更になる場合があります。
+        </p>
+      </div>
+
+      <div class="day1-back fade-up">
+        <a
+          class="primary-button"
+          href="index.html#schedule"
+        >
+          3日間のスケジュールへ戻る
+        </a>
+      </div>
+
     </section>
 
+    <!-- footer -->
     <footer class="site-footer">
-      <img src="img/logo.png" alt="LuckLick" />
-      <p>LuckLick 4th Anniversary Event</p>
+      <p>
+        LuckLick 4th Anniversary Event
+      </p>
+
+      <small>
+        © LuckLick
+      </small>
     </footer>
+
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
