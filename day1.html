@@ -14,26 +14,56 @@
 
     <!-- header -->
     <header class="site-header">
-      <a
-        class="header-logo"
-        href="index.html#top"
-        aria-label="LuckLick トップへ"
-      >
-        <img src="img/logo.png" alt="LuckLick" />
-      </a>
+  <a href="index.html" class="header-logo">
+    <img src="img/logo.png" alt="LuckLick" />
+  </a>
 
-      <button
-        class="hamburger"
-        type="button"
-        aria-label="メニューを開く"
-        aria-controls="fullscreen-menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
+  <button
+    class="hamburger"
+    type="button"
+    aria-label="メニューを開く"
+    aria-expanded="false"
+    aria-controls="fullscreenMenu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<nav
+  class="fullscreen-menu"
+  id="fullscreenMenu"
+  aria-hidden="true"
+>
+  <div class="fullscreen-menu-inner">
+
+    <a href="index.html">TOP</a>
+
+    <a href="index.html#event">
+      4周年イベント
+    </a>
+
+    <a href="photo-contest.html">
+      フォトコンテスト
+    </a>
+
+    <a href="summer_run.html">
+      ドッグラン企画
+    </a>
+
+    <a class="disabled-link">
+      フード販売
+      <small>Coming soon...</small>
+    </a>
+
+    <a class="disabled-link">
+      記念グッズ
+      <small>Coming soon...</small>
+    </a>
+
+  </div>
+</nav>
 
     <!-- fullscreen menu -->
     <nav
