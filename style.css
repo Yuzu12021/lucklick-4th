@@ -2358,3 +2358,214 @@ body::before {
   line-height:1.8 !important;
   text-align:center;
 }
+
+/* ========================================
+   ご予約・お問い合わせ
+======================================== */
+
+.day1-note h3{
+  margin:0 0 12px;
+  color:#4a3428;
+  font-size:22px;
+  font-weight:900;
+  text-align:center;
+}
+
+.day1-contact-buttons{
+  display:grid;
+  gap:10px;
+  margin:20px 0;
+}
+
+.day1-link-button.line{
+  background:#7bcf92;
+}
+
+.day1-link-button.phone{
+  background:#8db6d9;
+}
+
+.day1-contact-small{
+  margin:18px 0 0;
+  color:#72584c;
+  font-size:12px !important;
+  line-height:1.8 !important;
+  text-align:center;
+}
+
+/* ==========================
+   LuckLick Night
+========================== */
+
+.night-event {
+  padding: 52px 20px;
+}
+
+.night-event-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 2px solid #6f63c4;
+  box-shadow: 0 10px 28px rgba(55, 45, 110, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.night-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.night-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.night-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(32, 28, 70, 0.12);
+  pointer-events: none;
+}
+
+.night-badge {
+  display: table;
+  margin: 0 auto 16px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: #6f63c4;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.night-event h2 {
+  margin: 0 0 18px;
+  color: #403761;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.night-text {
+  margin: 0;
+  color: #5d4b42;
+  line-height: 2;
+  text-align: center;
+}
+
+.night-text strong {
+  color: #5f55b8;
+}
+
+.night-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.night-info span {
+  padding: 10px 16px;
+  border: 1px solid #d7d1ff;
+  border-radius: 999px;
+  background: #f3f1ff;
+  color: #4d437f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ==========================
+   Night用の紫波線
+========================== */
+
+.night-wave {
+  --accent: #6f63c4;
+
+  position: relative;
+  height: 46px;
+  max-width: 900px;
+  margin: 8px auto;
+  overflow: visible;
+}
+
+.accent-wave-line-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.night-ribbon-bottom svg {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+.night-wave .accent-wave-line-path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 0.16;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  /* アニメーションなし */
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  animation: none;
+}
+
+@media (max-width: 768px) {
+
+  .night-event {
+    padding: 36px 0;
+  }
+
+  .night-event-inner {
+    padding: 18px;
+  }
+
+  .night-event h2 {
+    font-size: 28px;
+  }
+
+  .night-text {
+    text-align: left;
+  }
+
+  .night-info {
+    gap: 8px;
+  }
+
+  .night-info span {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .night-wave {
+    height: 34px;
+    margin: 6px auto;
+  }
+
+}
+.night-ribbon{
+    width:100%;
+    height:42px;
+    overflow:hidden;
+}
+
+.night-ribbon svg{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.night-ribbon path{
+    fill:#6f63c4;
+}
